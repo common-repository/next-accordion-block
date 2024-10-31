@@ -1,0 +1,41 @@
+/*!**************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/accordion/editor.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************/
+/*
+* Style Works for Editor Only
+*/
+.next-block-accordion .accordion-item ~ .block-list-appender.wp-block {
+  bottom: -30px;
+  left: 50%;
+}
+
+.next-accordion-block-color-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.next-accordion-block-color-controls p {
+  margin-bottom: 0;
+}
+
+.next-accordion-block-color-controls button.components-button {
+  padding: 0;
+}
+
+.next-accordion-block-color-controls .components-button:focus:not(:disabled) {
+  box-shadow: none;
+  outline: none;
+}
+
+.next-accordion-block-color-controls button.components-button span.component-color-indicator {
+  width: 30px;
+  height: 30px;
+}
+
+.next-block-accordion .accordion .accordion-header .accordion-button {
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=index.css.map*/

@@ -1,0 +1,98 @@
+.next-block-accordion .accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.next-block-accordion .accordion-button p {
+  margin: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .next-block-accordion .accordion-button {
+    transition: none;
+  }
+}
+.next-block-accordion .accordion-button:not(.collapsed) {
+  color: #0c63e4;
+  background-color: #e7f1ff;
+}
+.next-block-accordion .accordion-button:hover {
+  z-index: 2;
+}
+.next-block-accordion .accordion-button:focus {
+  z-index: 3;
+  border-color: #86b7fe;
+  outline: 0;
+}
+
+.next-block-accordion .accordion-header {
+  margin-bottom: 0;
+}
+
+.next-block-accordion .accordion-item {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-radius: 0.25rem;
+}
+.next-block-accordion .accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+.next-block-accordion .accordion-item:not(:first-of-type) {
+  border-top: 0;
+}
+.next-block-accordion .accordion-item:last-of-type {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+.next-block-accordion .accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: calc(0.25rem - 1px);
+  border-bottom-left-radius: calc(0.25rem - 1px);
+}
+.next-block-accordion .accordion-item:last-of-type .accordion-collapse {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.next-block-accordion .accordion .accordion-header .accordion-button{
+  cursor: pointer;
+}
+
+.next-block-accordion .accordion-body p {
+  margin: 0;
+}
+
+.next-block-accordion .collapse:not(.show) {
+  display: none;
+}
+
+.next-block-accordion .collapsing {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .next-block-accordion .collapsing {
+    transition: none;
+  }
+}
+
+.next-block-accordion i.na-collapse-icon.fa.fa-minus,
+.next-block-accordion i.na-expand-icon.fa.fa-plus{
+	display: none;
+}
+
+.next-block-accordion i.na-collapse-icon.show.fa.fa-minus,
+.next-block-accordion i.na-expand-icon.show.fa.fa-plus{
+	display: block;
+}

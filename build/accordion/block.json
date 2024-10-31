@@ -1,0 +1,88 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "nextblocks/accordion",
+  "version": "1.0.0",
+  "title": "Next Accordion",
+  "description": "Display beautiful accordion section or page with Next Accordion Block",
+  "category": "next-blocks",
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "example": {
+    "attributes": {
+      "type": "boolean",
+      "preview": true
+    }
+  },
+  "attributes": {
+    "uniqueId": {
+      "type": "string"
+    },
+    "iconColor": {
+      "type": "string",
+      "default": "#444"
+    },
+    "iconActiveColor": {
+      "type": "string",
+      "default": "#444"
+    },
+    "titleBg": {
+      "type": "string",
+      "default": "#eee"
+    },
+    "titleColor": {
+      "type": "string",
+      "default": "#444"
+    },
+    "titlePadding": {
+      "type": "object",
+      "default": {
+        "top": "10px",
+        "right": "10px",
+        "bottom": "10px",
+        "left": "10px"
+      }
+    },
+    "contentBg": {
+      "type": "string",
+      "default": "#fff"
+    },
+    "contentPadding": {
+      "type": "object",
+      "default": {
+        "top": "10px",
+        "right": "10px",
+        "bottom": "10px",
+        "left": "10px"
+      }
+    },
+    "iconSize": {
+      "type": "number",
+      "default": 16
+    },
+    "iconUnit": {
+      "type": "string",
+      "default": "px"
+    },
+    "iconUnitActive": {
+      "type": "string",
+      "default": "is-px-active"
+    },
+    "iconMarginsRight": {
+      "type": "object",
+      "default": {
+        "right": "10px"
+      }
+    },
+    "preview": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "textdomain": "next-accordion-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
